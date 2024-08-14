@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>呆呆国宪法</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+            --text-color: #333;
+            --bg-color: rgba(255, 255, 255, 0.2);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #f0f0f0;
+                --bg-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-gradient);
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 800px;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+            background: var(--bg-color);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                justify-content: flex-start;
+                padding-left: calc((100% - 65%) * 0.382);
+            }
+            .content-wrapper {
+                width: 65%;
+            }
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dashed currentColor;
+        }
+
+        a:hover {
+            border-bottom-style: solid;
+        }
+
+        /* 添加滚动条样式 */
+        .content-wrapper::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .content-wrapper::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .content-wrapper::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+        .content-wrapper::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .close-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s ease;
+            z-index: 1000;
+        }
+
+        .close-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .close-button::before,
+        .close-button::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: var(--text-color);
+            transform: rotate(45deg);
+        }
+
+        .close-button::after {
+            transform: rotate(-45deg);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <button class="close-button" onclick="closeWebsite()"></button>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="content">
+                <h1>呆呆国宪法</h1>
+                <p></p>
+                <p>该法案由投票通过已生效[image:https://raw.githubusercontent.com/FDO-page/test/main/IMG_1292.jpeg]</p>
+                <ul>
+                <li>
+第一条：呆呆国是一个民主法治的社会民主主义国家。
+</li>
+                    <p></p>
+                <li>第二条：任何与呆国宪法相抵触的法律必须修改或废除。呆国宪法具有最高法律地位、最高法律效力和最高法律权威，是呆国的根本法。
+</li>
+                    <p></p>
+                <li>第三条：每两周选举产生一任总统，由议会投票产生。如无结果，则由副总统代理。每两周不得连任。若副总统无结果，由副副总统担任。</li>
+                    <p></p>
+                <li>第四条：任何呆团成员都可参与总统选举（需要提前报备），少数服从多数。
+</li>
+                    <p></p>
+                <li>第五条：行政权归呆国总统、副总统、总理、副副总统，司法权归司法部，立法权归其他人。任何人不得同时拥有三项权力。（详见<a href="https://hljhlj121311.github.io/xiJP.GitHub.io/">呆呆团民主制条例</a>）
+</li>
+                    <p></p>
+                <li>第六条：民主选举产生的团具有唯一合法性
+</li>
+                    <p></p>
+                <li>第七条：通过选举产生的职位必须经过选举方可继续留任，总统等职位除外。
+</li>
+                    <p></p>
+                <li>第八条：呆民享有平等获得法律保护的权利，需互相尊重并承认彼此的权力与地位
+</li>
+                    <p></p>
+                <li>第九条：司法人员如有违法犯罪行为，可被群众或检察院指控下台，被定罪者需受相应惩罚。
+</li>
+                    <p></p>
+                <li>第十条：宪法的修改需获得四分之三以上呆员同意。如违反宪法，则需立即整改。（详见<a href="https://hljhlj121311.github.io/xiJP.GitHub.io/">呆呆团民主制条例</a>）</li>
+                  <p></p>
+                  <li>第十一条：军事委员会会长和国防部长不得滥用军令对内部人员使用。</li>
+                  <p></p>
+                  <li>第十二条：呆国安保局可协助总统和司法部或调节内部矛盾。</li>
+                  <p></p>
+                  <li>第十三条：总理／首相可用法律条例罢免官员职务，如有一半以上反对则无效，可组织立法活动和修宪投票。</li>
+                  <p></p>
+                  <li>第十四条：呆民享有游行、抗议、自由发言、出行等权力，但应注意不升级矛盾，应及时和解。</li>
+                  <p></p>
+                  <li>第十五条：呆呆币是呆国通用货币，PP币也可作为货币之一。</li>
+                  <p></p>
+                  <li>第十六条：劳工或农民奴享有劳动权，积极劳动可提高收入和获得更多保障。</li>
+                  <p></p>
+                  <li>第十七条：呆国实行高福利与高保障政策，借钱无利率，没钱请吃饭的福利保障政策。不得强迫借钱。</li>
+                  <p></p>
+                  <li>第十八条：呆民幸福是最大人权</li>
+                  <p></p>
+                  <li>第十九条：呆民享有选举权、呆教信仰自由、私有财产、教育权、食品医疗、思想自由等权利</li>
+                  <p></p>
+                  <li>第二十条：任何企图分裂呆国、怀有不良意图的势力都应受到呆团的反对与制裁。（详见《呆呆团全员互保条例》）</li>
+                  <p></p>
+                  <li>
+第二十一条：支持多重团籍，但须经呆呆团批准方可加入</li>
+                  <p></p>
+                  <li>第二十二条：不得在老师面前过度彰显呆团的存在，更不能违反班规。如有违反，个人需承担责任。</li>
+                  
+                
+                  
+
+                    <p></p>
+                </ul>
+                <p>声明</p>
+            <ul>
+                    <p></p>
+                <li>该条例是在FDO的基础上修订与完善，不约束FDO局内部。该条例可能会更改，如有提议请联系我们
+</li>
+            </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function processLinks() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\[link:(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+        }
+        
+        function processLineBreaks() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\\n/g, '<br>');
+        }
+
+        function processImages() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\[image:\s*(.*?)\]/g, '<img src="$1" alt="Image">');
+        }
+
+        function closeWebsite() {
+            window.close();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            processLinks();
+            processLineBreaks();
+            processImages();
+        });
+    </script>
+</body>
+</html>
